@@ -13,56 +13,75 @@
       background-position: center;
       color: #5d3a5a;
       text-align: center;
-      padding: 30px;
+      padding: 0;
     }
 
     .container {
-      max-width: 600px;
+      max-width: 650px;
       margin: auto;
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      padding: 30px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      padding: 40px 20px;
+      margin-top: 50px;
     }
 
     h1 {
-      font-size: 2.5em;
-      color: #b76e79;
+      font-size: 2.8em;
+      color: #c94e85;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 2.2em;
+      color: #6b3e75;
     }
 
     .tema {
       font-style: italic;
-      font-size: 1.1em;
-      margin-bottom: 20px;
+      font-size: 1.2em;
+      margin: 20px 0;
+      color: #8d5c84;
     }
 
     .btn-container {
       display: flex;
       flex-direction: column;
-      gap: 15px;
-      margin-top: 25px;
+      gap: 18px;
+      margin-top: 30px;
     }
 
     .btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      background: #ffb6c1;
+      gap: 12px;
+      font-size: 1.1em;
+      background: linear-gradient(135deg, #ff9eb0, #ffb6c1);
       color: white;
       font-weight: bold;
-      padding: 15px;
+      padding: 14px 24px;
       border-radius: 50px;
       text-decoration: none;
-      transition: 0.3s;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4);
     }
 
     .btn:hover {
-      background: #ff8fa3;
+      background: linear-gradient(135deg, #ff8fa3, #ffaab8);
+      transform: translateY(-2px);
     }
 
     .icon {
-      font-size: 1.4em;
+      font-size: 1.3em;
+    }
+
+    @media (max-width: 600px) {
+      .btn {
+        flex-direction: column;
+        gap: 6px;
+        font-size: 1em;
+      }
     }
   </style>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
